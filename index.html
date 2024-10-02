@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        #background {
+            width: 100%;
+            height: 700px;
+            background-image: url(./multimedia/main.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #pic {
+            height: 700px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #table {
+            height: 500px;
+            width: 100%;
+            background-image: url(./multimedia/book-table-img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #blur {
+            height: 500px;
+            width: 100%;
+            background-color: rgba(0, 20, 40, 0.5);
+        }
+
+        #pills-home-tab.active {
+            background-color: red;
+            color: white;
+
+
+        }
+
+        #pills-home-tab {
+            color: red;
+        }
+
+
+        #pills-profile-tab.active {
+            background-color: red;
+            color: white;
+
+        }
+
+        #pills-profile-tab {
+            color: red;
+        }
+
+        #curve {
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 2px;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 140px;
+            top: 95px;
+        }
+
+        #curve1 {
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 2px;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 140px;
+            top: 95px;
+        }
+
+        #curve2 {
+            width: 20px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 2px;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 130px;
+            top: 95px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+        <div class="container-fluid pe-3 row">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false">
+                <span class="navbar-toggler-icon float-start"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav col-lg-5 justify-content-start">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#pictures" class="nav-link text-white">Gallary</a></li>
+                    <li class="nav-item"><a href="#table" class="nav-link text-white">Book-Table</a></li>
+                </ul>
+                <ul class="navbar-nav  col-xl-2 justify-content-center">
+                    <li class="nav-item navbar-brand">
+                        <h2 class="text-danger">Food Hut</h2>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col-lg-5 justify-content-end">
+                    <li class="nav-item"><a href="#mycarousel" class="nav-link text-white">Blog</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link text-white">Reviews</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact Us</a></li>
+                    <li class="nav-item"><button type="button"
+                            class="nav-link text-white border-0 px-2 bg-danger w-5 rounded">Components</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="" id="background">
+        <div id="pic" class="container-fluid w-100">
+            <br><br><br><br><br><br>
+            <h1 class="text-center display-1 pb-2 my-5 py-5 text-white"><b>Food Hut</b></h1>
+            <p class="display-4  text-white text-center"><b>Always fresh & Delightful</b></p>
+            <center>
+                <a href="#pictures"><button type="button" class="btn btn-danger fs-5 btn-lg p-3 px-4">View Our
+                        Gallary</button>
+                </a>
+            </center>
+        </div>
+    </div>
+
+    <div class="h-auto  bg-secondary">
+        <div class="row w-100">
+            <div class="container-fluid w-50 col-6">
+                <img src="./multimedia/about-section.jpg" alt="" height="auto" width="100%"
+                    class="img-fluid d-none d-lg-block">
+            </div>
+            <div class="container-fluid col-12 col-lg-6" id="about">
+                <h1 class="text-white mt-5 ms-5">About Us</h1>
+                <p class="text-white ms-5 mt-4 me-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vel
+                    placeat assumenda quaerat, cupiditate corporis repellat ab aperiam dolorem voluptatem consequatur
+                    consectetur quidem cum tempore nam? Quaerat ullam quasi, unde ab obcaecati, sit temporibus porro
+                    ipsum autem dolor debitis illum praesentium provident, odio et ad quisquam quos corrupti?
+                    Consequatur, iste. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+                    quibusdam fuga voluptatum vel perspiciatis facere repudiandae sunt aperiam soluta? Architecto ut
+                    commodi enim fugit mollitia consequatur atque qui voluptates quasi! <br><br> Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Nemo voluptates ipsam deserunt corporis sunt recusandae
+                    asperiores quae magnam dignissimos blanditiis. Molestias sit magnam sunt temporibus cupiditate
+                    earum, fuga accusamus a.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-100 bg-secondary  py-5">
+        <h1 class="text-white text-center py-5 display-2"><b>OUR MENU</b></h1>
+    </div>
+    <div class="w-100 m-0 p-0" id="pictures">
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3 m-0 p-0" src="./multimedia/gallary-1.jpg" height="auto"
+                alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-2.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-3.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-4.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-5.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-6.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-7.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-8.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-9.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-10.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-11.jpg" height="auto" alt="">
+        </div>
+        <div>
+            <img class="float-start col-sm-12 col-md-6 col-lg-3" src="./multimedia/gallary-12.jpg" height="auto" alt="">
+        </div>
+    </div>
+    <div class="float-start" id="table">
+        <div id="blur" class="container-fluid w-100">
+            <h1 class="text-white text-center pt-5 display-2"><b>BOOK A TABLE</b></h1>
+            <form action="">
+                <div class="row my-5">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <input type="email" name="email"
+                            class="px-2 py-2 mt-lg-0 mt-2  form-control-plaintext border-white border-2"
+                            placeholder="EMAIL">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <input type="text" name="no"
+                            class="px-2 py-2 mt-lg-0 mt-2 form-control-plaintext  border border-white border-2 text-white"
+                            placeholder="NUMBER OF GUESTS">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <input type="time" name="time"
+                            class="px-2 py-2 mt-lg-0 mt-2 form-control-plaintext  border border-white border-2 text-white">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <input type="date" name="date"
+                            class="px-2 py-2 mt-lg-0 mt-2 form-control-plaintext  border border-white border-2 text-white">
+                    </div>
+                </div>
+            </form>
+            <center>
+                <button type="button" class="btn btn-danger btn-lg rounded-1 px-4 py-2">FIND TABLE</button>
+            </center>
+        </div>
+    </div>
+    <div class="container-fluid w-100 bg-secondary">
+        <h1 class="text-white display-2 text-center mt-lg-0 mt-sm-4"><b>EVENTS AT THE FOOD HUT</b></h1>
+        <div class="container mt-5">
+            <!-- Nav Pills -->
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Show Div 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Show Div 2</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="p-3 bg-secondary text-white d-lg-flex d-block justify-content-around">
+                        <div class=" card bg-secondary w-lg-30 w-100 me-3" style="width: 30%;">
+                            <img src="./multimedia/blog-1.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$5</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Reiciendis Laborum</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor, sit amet consectetur
+                                    adipisici elit. Porro illum aut maiores repellendus perspiciatis necessitatibus
+                                    earum ab dolores,quisqua aperiam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mt-lg-0 mt-4 w-lg-30 w-100 me-3" style="width: 30%;">
+                            <img src="./multimedia/blog-2.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$12</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Adipisci Totam</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Similique nostrum reiciendis odio quas voluptatum delectus
+                                    quibusdam tempora exercitationem qui impedit!</p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mt-lg-0 mt-4 w-lg-30 w-100" style="width: 30%;">
+                            <img src="./multimedia/blog-3.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$8</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Dicta Deserunt</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.Similique nostrum reiciendis odio quas voluptatum delectus
+                                    quibusdam tempora exercitationem qui impedit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="p-3 bg-secondary text-white d-lg-flex d-block justify-content-around">
+                        <div class="card bg-secondary mt-lg-0 mt-4 w-lg-30 w-100 me-3" style="width: 30%;">
+                            <img src="./multimedia/blog-4.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$15</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Consectetur Adipisicing Elit</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit Porro illum aut maiores repellendus perspiciatis necessitatibus
+                                    earum ab dolores,quisquam aperiam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mt-lg-0 mt-4 w-lg-30 w-100 me-3" style="width: 30%;">
+                            <img src="./multimedia/blog-5.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$29</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Ullam Laboriosam</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.Similique nostrum reiciendis odio quas voluptatum delectus
+                                    quibusdam tempora exercitationem qui impedit!</p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mt-lg-0 mt-4 w-lg-30 w-100" style="width: 30%;">
+                            <img src="./multimedia/blog-6.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <center>
+                                    <button class="btn btn-danger">$3</button>
+                                </center><br>
+                                <h4 class="text-white text-center">Fugit Ipsam</h4>
+                                <p class="card-text text-center text-white">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Similique nostrum reiciendis odio quas voluptatum delectus
+                                    quibusdam tempora exercitationem qui impedit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid w-100 bg-secondary text-white" id="reviews">
+        <br><br><br>
+        <h1 class="display-2 text-center"><b>REVIEWS</b></h1>
+        <br><br>
+        <div class="container d-lg-flex d-block justify-content-around">
+            <div class="me-lg-4 position-relative">
+                <p class="display-6 text-center"><b>John Doe</b><br><span class="lead">Web Designer</span></p>
+                <div id="curve" class="bg-secondary d-lg-flex d-none"></div>
+                <div class="border  border-danger "></div>
+                <p class="border border-top-0 border-white text-center px-3  py-4">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit.
+                    Quidem culpa consectetur ipsam aperiam harum eaque, non officiis quisquam tempore sunt.</p>
+
+            </div>
+            <div class="me-lg-4 position-relative">
+                <p class="display-6 text-center"><b>Steve Thomas</b><br><span class="lead">UX/UI Designer</span></p>
+                <div id="curve1" class="bg-secondary d-lg-flex d-none"></div>
+                <div class="border  border-danger "></div>
+                <p class="border border-top-0 border-white text-center px-3 py-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Expedita nobis, error sint nesciunt reiciendis fugiat magnam culpa debitis beatae voluptatum!</p>
+
+            </div>
+            <div class="me-lg-4 position-relative">
+                <p class="display-6 text-center"><b>Miranda Joy</b><br><span class="lead">Graphic Designer</span></p>
+                <div id="curve2" class="bg-secondary d-lg-flex d-none"></div>
+                <div class="border  border-danger "></div>
+                <p class="border border-top-0 border-white text-center px-4 py-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Nisi quo, quae velit iste suscipit ex placeat accusamus consequatur dolor itaque?</p>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="container-fluid w-100 row" id="contact">
+            <div class="col-lg-6">
+                <img src="./multimedia/map.PNG" width="100%" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h5 class="mt-5 display-6"><b>FIND US</b></h5><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptates accusamus, enim vel odit
+                    unde delectus quibusdam iusto adipisci dolore assumenda, totam, voluptate ipsa blanditiis animi
+                    sapiente dignissimos expedita! Est!</p>
+                <p class="">12345 Fake ST NoWhere,AB Country</p>
+                <p>(123)456-7890</p>
+                <p>info@website.com</p>
+            </div>
+        </div>
+        
+        <hr>
+        <br><br>
+        <div class="bg-secondary container-fluid w-100 text-white d-block d-md-flex justify-content-around">
+            <p class="display-5 text-center"><b>EMAIL US</b><br><span class="lead">Web Designer</span></p>
+            <p class="display-5 text-center"><b>CALL US</b><br><span class="lead">UX/UI Designer</span></p>
+            <p class="display-5 text-center"><b>FIND US</b><br><span class="lead">Graphic Designer</span></p>
+
+        </div>
+
+        <br><br><br>
+        <hr>
+        <div class="container-fluid w-100 d-flex justify-content-center">
+            <p>Copyright 2024 Made with By <span class="text-danger">DevCRUD</span></p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
